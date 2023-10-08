@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+
+nav {
+    background-color: #333;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; 
+    letter-spacing: 2px; 
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    display: flex;
+    width: 100px;
+}
+.logo h1{
+    color: white;
+    font-size: 15px;
+}
+.verde{
+    color: #00ff00;
+}
+.lista a{
+    text-decoration: none; 
+    color: inherit; 
+    transition: color 0.3s;
+    
+}
+.lista a:hover {
+    color: white; 
+}
+
+nav.caja{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    color: white;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.overlay h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: right;
+    margin-left: 350px;
+}
+
+
+.overlay .btn-container {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.overlay .btn {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.overlay .btn.transparent {
+    background-color: transparent; 
+    color: white;
+    border: 1px solid white; 
+}
+
+
+
+
+.my-section {
+    text-align: center; 
+    padding: 20px;
+}
+
+.my-section h2, .my-section h3 {
+    margin: 0;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+
+.image {
+    flex: 1; 
+    background-color: #f9f9f9; 
+    
+    text-align: initial;
+    border: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.image h4 {
+    margin: 10px 0 25px; 
+}
+
+.image p {
+    margin: 0;
+}
+
+.color-text {
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+.color-text .yellow-text,
+.color-text .blue-text {
+    display: inline-block;
+   
+    background-color: transparent;
+    border: 2px solid transparent; 
+    cursor: pointer;
+    margin-right: 10px; 
+    border-radius: 20px; 
+}
+.color-text .yellow-text {
+    color: black; 
+    background-color: yellow; 
+}
+
+.color-text .blue-text {
+    color: white; 
+    background-color: blue; 
+}
+
+
+.color-text .yellow-text:hover,
+.color-text .blue-text:hover {
+    background-color: transparent; 
+    border-color: yellow; 
+    color: white; 
+}
+
+.my-aside {
+    display: flex;
+    width: 100%; 
+   
+}
+
+.my-aside img {
+    max-width: 50%; 
+    height: auto; 
+}
+.gray-box {
+   
+   background-color: gray; 
+   color: white;
+   padding: 20px; 
+}
+
+.gray-box h3 {
+    margin-top: 0; 
+}
+
+.gray-box button {
+    background-color: transparent; 
+    color: white; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    padding: 10px 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+}
+
+.gray-box button:hover {
+    background-color: white; 
+    color: gray; 
+    border-color: white; 
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.my-form .name-and-surname {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.my-form .name-and-surname .form-group {
+    flex: 0 0 calc(48% - 5px); 
+}
+
+.placeholder-label {
+    color: #999; 
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+    width: 100%;
+    min-width: 180px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.my-form textarea {
+    height: 150px;
+}
+
+.my-form p {
+    text-align: left;
+    margin-top: -10px; 
+}
+
+.my-form button {
+    width: 100%;
+    background-color: #00ff00;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.centered-content span {
+    display: block; 
+}
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: slategray;
+    word-spacing: 10px;
+}
+
+
+footer a {
+    text-decoration: none; 
+    color: inherit; 
+    transition: color 0.3s;
+    word-spacing: 5px;
+}
+
+
+footer a:hover {
+    color: white; 
+}
+
+
+
+@media (max-width: 768px) {
+    .caja {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .logo img {
+        max-width: 80px; 
+    }
+
+    .lista {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .image-container {
+        flex-direction: column; 
+    }
+
+    .image {
+        padding: 20px;
+    }
+
+    .color-text {
+        margin-top: 10px; 
+        text-align: center; 
+    }
+
+    .my-aside img {
+        max-width: 100%; 
+    }
+
+    .my-aside .gray-box {
+        padding: 20px; 
+    }
+
+    .centered-content span {
+        display: block; 
+        text-align: center; 
+        margin-bottom: 10px;
+    }
+
+    .my-form {
+        max-width: 100%; 
+        padding: 20px; 
+    }
+
+    .my-form .name-and-surname .form-group {
+        flex: 1; 
+        margin-right: 0; 
+    }
+}
